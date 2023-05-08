@@ -1,0 +1,92 @@
+/* first, give it a default style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* style to the body */
+body {
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Give the container style, to choose, class, .ClassName */
+.itemContainer {
+    text-align: center;
+    padding: 370px;
+    border-radius: 10px;
+    box-shadow: 20px 20px 20px #d9d9d9, -20px -20px 60px #d9d9d9
+        /* give on other side too */
+}
+
+/* heading */
+h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(46, 46, 46);
+
+}
+
+.timeDisplay {
+    font-family: sans-serif;
+    font-size: 48px;
+    background-color: rgb(255, 233, 209);
+    /* font-weight: bold; */
+    /* distance b/w up and down */
+    padding: 20px;
+    /* background-color: #ffffff; */
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    /*inset means shadow is inside the item*/
+    box-shadow:  10px 10px 10px #d9d9d9,  -10px -10px 60px #ffffff;
+    color: black;
+}
+
+
+/* button is a tag(built-in) keyword, so we dont use "." b4 it */
+button {
+    font-size: 18px;
+    font-family: monospace;
+    /* height, width */
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 15px;
+    border: none;
+    /* box-shadow: 4px 4px 4px #d9d9d9, -4px -4px 30px #ffffff; */
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+/* hover used along-side transition, need hover if we use transition */
+button:hover {
+    /* enlarge buttons upon hovering */
+    transform: scale(1.04);
+}
+
+/* So above were properties of all buttons all together, */
+/* now we manipulate with functionality each button seperately */
+.start {
+    background-color: lightgreen;
+    /*font color*/
+    color: rgb(2, 92, 2);
+    font-weight: bold;
+}
+
+.stop {
+    background-color: rgb(254, 154, 154);
+    /*font color*/
+    color: rgb(255, 0, 0);
+    font-weight: bold;
+
+}
+
+.reset {
+    background-color: rgb(175, 175, 175);
+    /*font color*/
+    color: black;
+    font-weight: bold;
+}
